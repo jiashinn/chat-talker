@@ -1,0 +1,18 @@
+@import "variables";
+
+@mixin btn-warning {
+  color: $color-light;
+  background-color: $color-danger;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 22px;
+}
+
+@mixin btn-primary {
+  color: $color-light;
+  background-color: $color-primary;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 27px;
+  border: none;
+}

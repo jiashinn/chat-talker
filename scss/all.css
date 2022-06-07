@@ -1,0 +1,501 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.border-bottom {
+  border-bottom: 3px solid #ffd153;
+}
+
+.bg-circle {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg") no-repeat top 5px left -77px, url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg") no-repeat bottom 20px right -47px;
+  background-size: 126px 126px, 135px 135px;
+}
+
+.bg-top-circle-yellow {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg") no-repeat top 40px left -76px;
+  background-size: 153px 153px;
+}
+
+.container {
+  width: min(90%, 767px);
+  margin-inline: auto;
+}
+.container .phone-container-row {
+  display: flex;
+}
+.container header .nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.container header .nav .logo {
+  width: 130px;
+}
+.container header .nav-btn {
+  color: #ffffff;
+  background-color: #ff5d50;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 22px;
+}
+.container .intro {
+  padding: 32px 0;
+  margin-bottom: max(60px, 5%);
+}
+.container .intro-title {
+  color: #56c4c5;
+  padding-bottom: 6px;
+  font-size: clamp(1rem, 0.9526992936rem + 0.2018163471vw, 1.125rem);
+}
+.container .intro-slogan {
+  font-size: clamp(2rem, 1.6215943491rem + 1.614530777vw, 3rem);
+  color: #221e1f;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.container .intro-text {
+  color: #221e1f;
+  padding-bottom: 32px;
+  font-size: clamp(1rem, 0.9053985873rem + 0.4036326942vw, 1.25rem);
+}
+.container .intro .banner {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg") no-repeat top 80px right;
+  background-size: contain;
+  text-align: right;
+  padding-left: 5%;
+  padding-bottom: 30px;
+  position: relative;
+}
+.container .intro .banner .top-rank-icon {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container .social-media {
+  text-align: center;
+}
+.container .social-media .title {
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.6553985873rem + 0.4036326942vw, 2rem);
+  margin-bottom: 32px;
+}
+.container .social-media .wrap {
+  margin-inline: auto;
+  width: min(60%, 767px);
+  color: #221e1f;
+  padding-bottom: 60px;
+}
+.container .social-media .wrap .box + .box {
+  padding-top: 24px;
+}
+.container .social-media-img {
+  width: 60px;
+  margin-inline: auto;
+}
+.container .social-media-name {
+  font-size: clamp(1.125rem, 0.9830978809rem + 0.6054490414vw, 1.5rem);
+  padding: 16px 0;
+}
+.container .social-media-text {
+  color: #747474;
+}
+.container .card {
+  color: #221e1f;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.container .card .title {
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.6553985873rem + 0.4036326942vw, 2rem);
+}
+.container .card .subtitle {
+  font-size: clamp(1.125rem, 1.0776992936rem + 0.2018163471vw, 1.25rem);
+  padding: 16px 0 32px;
+}
+.container .card-item {
+  margin-inline: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+}
+.container .card-item .bg-light {
+  background-color: #ffffff;
+}
+.container .card-item-center {
+  width: 260px;
+}
+.container .card-item-center .card-title {
+  color: #56c4c5;
+  padding: 16px 0;
+  font-size: clamp(1rem, 0.8107971746rem + 0.8072653885vw, 1.5rem);
+}
+.container .card-item-center .card-text {
+  max-width: 228px;
+  margin-inline: auto;
+  padding-bottom: 32px;
+}
+.container .card-item + .card-item {
+  margin-top: 24px;
+}
+.container-img {
+  border-radius: 12px;
+}
+.container .subtitle-sm {
+  font-size: clamp(1rem, 0.9526992936rem + 0.2018163471vw, 1.125rem);
+}
+.container .card-item-left {
+  width: 230px;
+  text-align: left;
+  padding: 32px 0 48px 17px;
+}
+.container .card-item-left .card-icon {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-item-left .card-title {
+  margin: 24px 0 20px;
+  font-weight: 900;
+}
+.container .btn-primary {
+  color: #ffffff;
+  background-color: #56c4c5;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 27px;
+  border: none;
+  margin-bottom: 44px;
+}
+.container .slide .title {
+  text-align: center;
+  font-size: clamp(1.75rem, 1.6554rem + 0.4036vw, 2rem);
+}
+.container .slide-item {
+  margin: 88px 0 24px;
+  position: relative;
+  padding: 48px 17px 16px 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  height: initial;
+}
+.container .slide-item .phone-container-row {
+  justify-content: space-between;
+  align-items: center;
+}
+.container .slide-item .star-rating input[type=radio] {
+  display: none;
+}
+.container .slide-item .star-rating label {
+  color: grey;
+  float: right;
+  margin-right: 8px;
+}
+.container .slide-item .star-rating label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f005";
+}
+.container .slide-item .star-rating input:checked ~ label {
+  color: #f5ca52;
+}
+.container .slide-item .star-rating input:checked ~ label:hover,
+.container .slide-item .star-rating input:checked ~ label:hover ~ label {
+  color: #f5ca52;
+}
+.container .slide-item .star-rating:not(:checked) > label:hover, .container .slide-item .star-rating:not(:checked) > label:hover ~ label {
+  color: #f5ca52;
+}
+.container .slide-avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -60px;
+  left: 32px;
+}
+.container .slide-avatar img {
+  border-radius: 50%;
+}
+.container .slide-text:nth-child(2) {
+  padding-bottom: 16px;
+}
+.container .slide-title {
+  padding: 16px 0 8px;
+  border-top: 1px solid #dddddd;
+}
+
+.swiper .swiper-pagination {
+  position: static;
+  margin-bottom: 60px;
+}
+.swiper .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 8px;
+  background-color: #f5ca52;
+}
+
+footer {
+  text-align: center;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg") no-repeat;
+  background-size: 100%;
+}
+footer .title {
+  font-size: clamp(1.5rem, 1.3107971746rem + 0.8072653885vw, 2rem);
+  padding: 293px 0 24px;
+}
+footer .btn-primary {
+  color: #ffffff;
+  background-color: #56c4c5;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 27px;
+  border: none;
+  margin-bottom: 60px;
+}
+footer .copyright {
+  background-color: #f5f5f5;
+  padding: 16px 0;
+}
+
+@media (min-width: 767px) {
+  body {
+    line-height: 1.25;
+  }
+
+  .desktop-bg {
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg") no-repeat top right;
+    background-size: contain;
+  }
+  .desktop-bg .border-bottom {
+    border: none;
+  }
+
+  .container {
+    width: min(80%, 1366px);
+  }
+  .container .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .intro .banner {
+    background: none;
+  }
+  .container .social-media .wrap {
+    width: min(100%, 969px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding-bottom: 100px;
+  }
+  .container .social-media .wrap .box {
+    flex: 1;
+  }
+  .container .social-media .wrap .box + .box {
+    padding-top: 0;
+  }
+  .container .card {
+    padding-bottom: 100px;
+  }
+  .container .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+  .container .card-item + .card-item {
+    margin-top: 0;
+  }
+  .container .card-item {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    text-align: center;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg") no-repeat;
+    background-size: 100%;
+  }
+  footer .title {
+    padding: 20% 0 48px;
+  }
+}
+@media (min-width: 1266px) {
+  .bg-circle {
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg") no-repeat top -50% left -222px, url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg") no-repeat bottom 20px right -100px;
+    background-size: 360px 360px, 310px 310px;
+  }
+
+  .flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5%;
+    align-items: center;
+  }
+  .flex-reverse .wrap {
+    flex: 1;
+  }
+  .flex-reverse .card-item-left {
+    margin: 0;
+  }
+}/*# sourceMappingURL=all.css.map */
