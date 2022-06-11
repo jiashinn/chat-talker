@@ -276,7 +276,7 @@ a {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 12px;
 }
-.container .card-item .bg-light {
+.container .card .bg-light {
   background-color: #ffffff;
 }
 .container .card-item-center {

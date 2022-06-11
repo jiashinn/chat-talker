@@ -185,12 +185,10 @@ a {
     &-item {
       margin-inline: auto;
       @include card-border;
-
-      .bg-light {
-        background-color: $color-light;
-      }
     }
-
+    .bg-light {
+      background-color: $color-light;
+    }
     &-item-center {
       width: 260px;
 
