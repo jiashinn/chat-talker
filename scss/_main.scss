@@ -46,6 +46,9 @@ a {
   background-size: 153px 153px;
 }
 
+.navy-circle {
+  display: none;
+}
 .container {
   width: min(90%, 767px);
   margin-inline: auto;
@@ -435,12 +438,18 @@ footer {
 }
 
 @media (min-width: 1266px) {
+  .navy-circle {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: -10%;
+    width: 360px;
+  }
+
   .bg-circle {
-    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg")
-        no-repeat top -50% left -222px,
-      url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg")
-        no-repeat bottom 20px right -100px;
-    background-size: 360px 360px, 310px 310px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg")
+      no-repeat bottom 20px right -100px;
+    background-size: 310px 310px;
   }
   .flex-reverse {
     display: flex;
