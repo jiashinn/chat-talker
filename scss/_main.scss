@@ -112,10 +112,10 @@ a {
       position: relative;
 
       .top-rank-icon {
-        width: 15%;
+        width: max(50px, 5%);
         position: fixed;
-        bottom: 15%;
-        right: 5%;
+        top: 620px;
+        right: 16px;
       }
     }
   }
